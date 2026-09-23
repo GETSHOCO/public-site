@@ -1,0 +1,14 @@
+services:
+  getshoco-site:
+    image: nginx:alpine
+    container_name: getshoco-site
+    restart: unless-stopped
+    volumes:
+      - /srv/deployed/public-site/public:/usr/share/nginx/html:ro
+      - /srv/deployed/public-site/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - joelab-ingress
+
+networks:
+  joelab-ingress:
+    external: true
