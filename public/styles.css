@@ -39,11 +39,11 @@ h3 { margin: 45px 0 12px; font-size: 1.35rem; letter-spacing: -.04em; }
 .contact h2 { margin-bottom: 16px; font-size: clamp(2.8rem, 6vw, 6rem); line-height: .95; letter-spacing: -.07em; font-weight: 500; }
 .contact-copy { max-width: 430px; color: var(--muted); line-height: 1.5; }
 .contact form { display: flex; gap: 10px; max-width: 620px; margin-top: 28px; }
-.contact input[type="email"] { flex: 1; min-width: 0; border: 1px solid var(--ink); padding: 15px 16px; color: var(--ink); background: transparent; font: inherit; }
+.contact input[type="email"] { flex: 1; min-width: 0; height: 52px; border: 1px solid var(--ink); padding: 0 16px; color: var(--ink); background: transparent; font: inherit; }
 .contact input[type="email"]:focus { outline: 2px solid var(--orange); outline-offset: 2px; }
-.contact .button { margin-top: 0; cursor: pointer; }
+.contact .button { min-height: 52px; margin-top: 0; cursor: pointer; }
 .fine-print { margin-top: 14px; color: var(--muted); font: .68rem 'DM Mono', monospace; }
-.honeypot, .sr-only { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: 0 !important; opacity: 0 !important; pointer-events: none !important; }
+.honeypot, .sr-only { display: none !important; }
 .site-footer { padding: 24px 0 30px; color: var(--muted); font: .68rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
 .site-footer div { display: flex; gap: 20px; }
 .legal-shell { min-height: 100vh; display: flex; flex-direction: column; }
