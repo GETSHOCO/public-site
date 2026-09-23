@@ -36,8 +36,14 @@ h1 em { color: var(--orange); font-style: normal; }
 h3 { margin: 45px 0 12px; font-size: 1.35rem; letter-spacing: -.04em; }
 .feature-grid p { max-width: 260px; margin: 0; color: var(--muted); line-height: 1.5; font-size: .92rem; }
 .contact { padding: 150px 0; }
-.contact a { display: inline-block; font-size: clamp(2.2rem, 5vw, 5.3rem); line-height: 1; letter-spacing: -.07em; text-decoration: none; border-bottom: 2px solid var(--orange); }
-.contact a span { color: var(--orange); }
+.contact h2 { margin-bottom: 16px; font-size: clamp(2.8rem, 6vw, 6rem); line-height: .95; letter-spacing: -.07em; font-weight: 500; }
+.contact-copy { max-width: 430px; color: var(--muted); line-height: 1.5; }
+.contact form { display: flex; gap: 10px; max-width: 620px; margin-top: 28px; }
+.contact input[type="email"] { flex: 1; min-width: 0; border: 1px solid var(--ink); padding: 15px 16px; color: var(--ink); background: transparent; font: inherit; }
+.contact input[type="email"]:focus { outline: 2px solid var(--orange); outline-offset: 2px; }
+.contact .button { margin-top: 0; cursor: pointer; }
+.fine-print { margin-top: 14px; color: var(--muted); font: .68rem 'DM Mono', monospace; }
+.trap, .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .site-footer { padding: 24px 0 30px; color: var(--muted); font: .68rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
 .site-footer div { display: flex; gap: 20px; }
 .legal-shell { min-height: 100vh; display: flex; flex-direction: column; }
@@ -61,4 +67,7 @@ h3 { margin: 45px 0 12px; font-size: 1.35rem; letter-spacing: -.04em; }
   .feature-grid article:last-child { border-bottom: 0; }
   h3 { margin-top: 28px; }
   .legal-page { padding: 70px 0 90px; }
+  .contact form { display: block; }
+  .contact input[type="email"] { width: 100%; }
+  .contact .button { margin-top: 10px; }
 }

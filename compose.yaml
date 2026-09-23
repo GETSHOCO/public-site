@@ -9,6 +9,22 @@ services:
     networks:
       - joelab-ingress
 
+  mailing-list:
+    build:
+      context: ./service
+    container_name: shoco-mailing-list
+    restart: unless-stopped
+    environment:
+      SHOCO_MAILING_LIST_DB: /data/mailing-list.sqlite3
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
+    volumes:
+      - mailing_list_data:/data
+    networks:
+      - joelab-ingress
+
 networks:
   joelab-ingress:
     external: true
+
+volumes:
+  mailing_list_data:

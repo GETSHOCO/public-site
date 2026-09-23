@@ -17,7 +17,7 @@
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#join">Stay in the loop</a>
         </nav>
       </header>
 
@@ -27,7 +27,7 @@
             <p class="eyebrow">Tools for the live moment</p>
             <h1 id="hero-title">From your bedroom to the <em>big stage.</em></h1>
             <p class="intro">Learn the songs you love, make your own, build a band, and grow into the tools that power a professional show.</p>
-            <a class="button" href="mailto:hello@getshoco.com">Get in touch <span aria-hidden="true">↗</span></a>
+            <a class="button" href="#join">Stay in the loop <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-mark" aria-hidden="true">
             <div class="ring ring-one"></div>
@@ -59,9 +59,17 @@
           </article>
         </section>
 
-        <section class="contact" id="contact">
-          <p class="eyebrow">Have a question?</p>
-          <a href="mailto:hello@getshoco.com">hello@getshoco.com <span aria-hidden="true">↗</span></a>
+        <section class="contact" id="join">
+          <p class="eyebrow">Be first in line</p>
+          <h2>Get the next update.</h2>
+          <p class="contact-copy">Leave your email and we’ll let you know when Shoco is ready to play.</p>
+          <form action="/api/subscribe" method="post">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+            <label class="trap" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+            <button class="button" type="submit">Join the list <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="fine-print">Occasional updates. No noise. Unsubscribe anytime.</p>
         </section>
       </main>
 
