@@ -46,10 +46,12 @@ h3 { margin: 45px 0 12px; font-size: 1.35rem; letter-spacing: -.04em; }
 .contact .eyebrow { position: relative; z-index: 1; }
 .contact h2 { position: relative; z-index: 1; margin-bottom: 16px; font-size: clamp(2.8rem, 6vw, 6rem); line-height: .95; letter-spacing: -.07em; font-weight: 500; }
 .contact-copy { position: relative; z-index: 1; max-width: 430px; color: #c9c3ba; line-height: 1.5; }
-.contact form { position: relative; z-index: 1; display: flex; gap: 10px; max-width: 680px; margin-top: 28px; }
+.contact form { position: relative; z-index: 1; max-width: 680px; margin-top: 28px; }
+.signup-controls { display: flex; gap: 10px; }
 .contact input[type="email"] { flex: 1; min-width: 0; height: 62px; border: 1px solid #8f8981; padding: 0 18px; color: var(--paper); background: rgba(244,241,234,.08); font: inherit; }
 .contact input[type="email"]::placeholder { color: #aaa39a; }
 .contact input[type="email"]:focus { outline: 2px solid var(--orange); outline-offset: 2px; border-color: var(--orange); }
+.turnstile { position: relative; z-index: 1; margin-top: 16px; min-height: 65px; }
 .contact .button { min-height: 62px; margin-top: 0; color: var(--ink); background: var(--orange); cursor: pointer; }
 .contact .button:hover { color: var(--paper); background: #ff7540; }
 .fine-print { position: relative; z-index: 1; margin-top: 14px; color: #9f9890; font: .68rem 'DM Mono', monospace; }
@@ -79,7 +81,7 @@ h3 { margin: 45px 0 12px; font-size: 1.35rem; letter-spacing: -.04em; }
   .feature-grid article:last-child { border-bottom: 0; }
   h3 { margin-top: 28px; }
   .legal-page { padding: 70px 0 90px; }
-  .contact form { display: block; }
+  .signup-controls { display: block; }
   .contact input[type="email"] { width: 100%; }
   .contact .button { margin-top: 10px; }
 }

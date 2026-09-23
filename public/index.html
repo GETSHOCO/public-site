@@ -6,7 +6,8 @@
     <meta name="description" content="Shoco makes live performance feel effortless." />
     <title>Shoco — Make the room move.</title>
     <link rel="icon" href="/assets/shoco-logo-stacked.png" type="image/png" />
-    <link rel="stylesheet" href="/styles.css?v=20260923-2" />
+    <link rel="stylesheet" href="/styles.css?v=20260923-3" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </head>
   <body>
     <div class="site-shell">
@@ -73,9 +74,14 @@
           <p class="contact-copy">Join the early list for launch updates and first access.</p>
           <form action="/api/subscribe" method="post">
             <label class="sr-only" for="email">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+            <div class="signup-controls">
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+              <button class="button" type="submit">Join the list <span aria-hidden="true">↗</span></button>
+            </div>
             <input class="honeypot" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" hidden />
-            <button class="button" type="submit">Join the list <span aria-hidden="true">↗</span></button>
+            <div class="turnstile" aria-label="Security verification">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAFArh1Y4zlUbvEsD"></div>
+            </div>
           </form>
           <p class="fine-print">Occasional updates. No noise. Unsubscribe anytime.</p>
         </section>

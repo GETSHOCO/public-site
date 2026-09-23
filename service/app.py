@@ -62,7 +62,7 @@ def rate_limited(ip: str) -> bool:
 
 def turnstile_ok(token: str, ip: str) -> bool:
     if not TURNSTILE_SECRET:
-        return True
+        return False
     if not token:
         return False
     payload = urllib.parse.urlencode({"secret": TURNSTILE_SECRET, "response": token, "remoteip": ip}).encode()
