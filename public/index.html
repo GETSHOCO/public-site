@@ -66,7 +66,7 @@
           <form action="/api/subscribe" method="post">
             <label class="sr-only" for="email">Email address</label>
             <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
-            <label class="trap" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+            <input class="honeypot" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <button class="button" type="submit">Join the list <span aria-hidden="true">↗</span></button>
           </form>
           <p class="fine-print">Occasional updates. No noise. Unsubscribe anytime.</p>
